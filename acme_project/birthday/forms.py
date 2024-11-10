@@ -24,6 +24,7 @@ class BirthdayForm(forms.ModelForm):
             'birthday': forms.DateInput(attrs={'type': 'date'})
         } 
 
+
     def clean_first_name(self):
         # Получаем значение имени из словаря очищенных данных.
         first_name = self.cleaned_data['first_name']
